@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>test6</title>
+<style type="text/css">
+	.wrapper{
+		margin:0 auto;
+		width:980px;height:1386px;
+		padding-left:44px;
+		padding-right:44px;
+		box-sizing: border-box;
+		
+	}
+	header{
+		width:100%;height:61px;
+		border-bottom: 2px solid #938e8c;
+	}
+	header .logo{
+		width:110px;height:61px;
+		background:#D55D5C;
+		color: #fff;
+		line-height: 105px;
+		text-indent: 10px;
+		font-size: 12px;
+		font-family: "黑体";
+	}
+	time{
+		color:#D55D5C ;
+		margin-left:755px;
+	}
+	.top{
+		width:100%;
+		padding-top:40px;
+	}
+	.top .bg{
+		width:641px;height:301px;
+		background: url(img/pic02.jpg) 641px 301px/100% 100%;
+		position: absolute;
+	}
+	.zl,.rl{
+		width:191px;height:301px;
+		opacity: .5;
+	}
+	.zl{
+		float:left;
+		background: #305543;
+	}
+	.rl{
+		float: right;
+		background: #6B434E;
+	}
+	.aside{
+		float: right;
+		width:200px;
+		height:299px;
+		background-color: #ccc;
+		border-top: 2px solid #cc8091;
+	}
+	.aside .p{
+		margin:0;
+		font-size: 24px;
+		font-family: "微软雅黑";
+		text-decoration: underline;
+		line-height: 40px;
+	}
+	.aside .p:first-letter{
+		font-size: 28px;
+	}
+	.aside span:nth-child(3){
+		color:#676767;
+		font:italic 12px/10px "楷体"
+	}
+	.aside p:nth-child(4){
+		margin: 0;
+		font-size: 116px;
+		font-family: "微软雅黑";
+		color:#75b86b;
+		font-style: italic;
+		text-indent: -17px;
+		line-height: 120px;
+	}
+	.aside p:nth-child(6){
+		color:#cc8091;font-family: "微软雅黑";	
+		font-size: 12px;
+		position:relative;
+		top:-20px;
+		left:10px;
+	}
+	.aside p:nth-child(6) span{
+		font-size: 55px;
+		color: #CC8091;
+	}
+	.aside p:nth-child(5){
+		position:absolute;
+		text-indent: 87px;color: #CC8091;
+		font-size: 21px;
+		line-height: 26px;
+	}
+	.mid{
+		width:641px;height:220px;
+		margin-top: 350px;
+	}
+	.mid div{
+		float:left;
+	}
+	.mid div:nth-child(1),.mid div:nth-child(2){
+		width:213px;
+		margin-right:16px;
+	}
+	.mid div:nth-child(3){
+		width:180px;
+	}
+	.mid h3{
+		font-size: 16px;
+		text-decoration: underline;
+	}
+	.mid div:nth-child(1) h3{
+		color:#418c59;
+	}
+	.mid div:nth-child(2) h3{
+		color:#d2994f;
+	}
+	.mid div:nth-child(3) h3{
+		color:#cd4a48;
+	}
+	.mid p{
+		font-size: 12px;
+		color:#231815;
+		line-height: 16px;
+		opacity: .7;
+	}
+	.bom{
+		position: relative;
+		width:100%;
+		height:650px;
+		border-bottom: 1px solid #938E8C;
+	}
+	.left{
+		width:415px;
+	}
+	.right{
+		position:absolute;
+		right:0;top:0;
+		width:458px;
+	}
+	.left h2{
+		color:#11456b;
+		font-size: 32px;
+		font-weight: 700;
+	}
+	.left h2 span{
+		font-size: 62px;
+		color: #f5e327;
+		font-weight: 700;
+		font-style: italic;
+	}
+	.left h2 p{
+		font-size: 30px;
+		margin:0;
+	}
+	.btm{
+	
+		margin:0;
+		border-top:2px solid #11456b;
+	}
+	.btm i{
+		float:left;
+		color: #F5E327;
+		font-size: 65px;
+		font-family: "微软雅黑";
+		font-style: normal;
+	}
+	.btm p{
+		font-family: "宋体";
+		font-size: 12px;
+		line-height: 16px;
+		opacity: .7;
+	}
+	.btm img{
+		float:right;
+	}
+	.zz{
+		width:458px;height:275px;
+		background:url(img/pic03.jpg) 458px 275px/100% 100%;
+		opacity: .8;
+		overflow: hidden;
+	}
+	.zz div{
+		height:61px;width:100%;
+		background:#000;
+		opacity: .8;
+		margin-top: 214px;
+		padding-top: 9px;
+		box-sizing: border-box;
+		padding-left: 40px;
+		color:#72B16A;
+		font-size: 12px;
+		font-style: italic;
+	}
+	.zz div span{
+		font-style: normal;
+		display: inline-block;
+		font-size: 26px;
+		font-family: "微软雅黑";
+		color: #fff;
+		border-left:3px solid #72b16a ;
+		height:44px;
+		text-indent: 10px;
+	}
+	.last{
+		width:100%;height:318px;
+		background:#EEEED6;
+		margin-top: 20px;
+		text-indent: 20px;
+		overflow: hidden;
+		opacity: .9;
+
+	}
+	.last i{
+		margin-right: 5px;
+		display: inline-block;
+		width:0;height:0;
+		border-top: none;
+		border-bottom: 10px solid #11456B;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+	}
+	.last p span{
+		font-style: italic;
+	}
+	.last .one{
+		width:260px;height:160px;
+		background:#D55D5C;
+		position:absolute;
+		bottom: 0;
+	}
+	.last .ov{
+		width:180px;
+		height:160px;
+		position:absolute;
+		bottom: 0;right:0;
+		font-family: "黑体";
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.ov span{
+		color:#D55D5C;
+		font-size: 100px;
+		position: relative;
+		top:50px;
+	}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="logo">ife.baidu.com<time>2016.03</time></div>
+	</header>
+	<div class="top">
+		<div class="bg">
+			<div class="zl"></div>
+			<div class="rl"></div>
+		</div>
+		<div class="aside">
+			<p class="p">ABOUT</p>
+			<p class="p">TECHNOLOGE</p>
+			<span>About technologe about technologe about technologe</span>
+			<p>700</p>
+			<p>css</p>
+			<p><span>3.2</span>csscsscsscss</p>
+		</div>
+	</div>
+	<div class="mid">
+		<div>
+			<h3>What</h3>
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		
+		</div>
+		<div>
+			<h3>When</h3>
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		</div>
+		<div>
+			<h3>How</h3>
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		</div>
+	</div>
+	<div class="bom">
+		<div class="left">
+			<h2><span>THE</span>TECHNOLOGE OF FRONT<p>前端技术领域</p></h2>
+			<div class="btm">
+				<i>前</i>
+				<p>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端<img src="img/ppp.jpg"/>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+				
+			</div>
+		</div>
+		<div class="right">
+			<div class="zz">
+				<div>
+					<span>前端技术</span>前端技术前端技术
+				</div>
+			</div>
+			<div class="last">
+				<p><i></i>前端前端前端前端前端前端前端前端.......................<span>前端</span></p>
+				<p><i></i>前端前端前端前端前端前端..................................<span>前端前</span></p>
+				<p><i></i>前端前端前端前端前端前端前端前端前端...............<span>前端</span></p>
+				<div class="one">我要吐啦！！！！！！！！！</div>
+				<div class="ov"><span>“</span>world hello world hello world hello world hello world hello world hello world hello
+					<span>”</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
