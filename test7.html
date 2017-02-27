@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>test7</title>
+<style type="text/css">
+body, ul {
+	margin: 0;
+}
+.wrapper {
+	width: 1280px;
+	height: 4461px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+header {
+	width: 100%;
+	height: 58px;
+}
+header h1 {
+	width: 150px;
+	height: 100%;
+	margin: 0;
+	font-family: "SimHei";
+	position: absolute;
+	margin-left: 50px;
+	font-size: 21px;
+	line-height: 58px;
+}
+header i {
+	display: inline-block;
+	margin-top: 10px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+header ul {
+	height: 58px;
+	position: absolute;
+	list-style: none;
+	margin-left: 755px;
+}
+header ul li {
+	height: 100%;
+	display: inline-block;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	line-height: 58px;
+	margin-right: 10px;
+}
+header ul li:first-child {
+	box-sizing: border-box;
+	color: #e74f4d;
+	border-bottom: 2px solid #e74f4d;
+}
+header div {
+	float: right;
+	margin-right: 50px;
+	width: 100px;
+	height: 58px;
+	font-size: 14px;
+	color: #e74f4d;
+}
+header div i {
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: -3px;
+}
+.top {
+	height: 750px;
+	width: 100%;
+	background: url(img/1.jpg);
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-left: 100px;
+}
+#zz {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: .1;
+}
+.top h2, .top p {
+	color: #fff;
+}
+.top h2 {
+	margin-top: 250px;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+.top p {
+	font-size: 16px;
+	width: 300px;
+}
+#btn {
+	background: #e7504d;
+	border: none;
+	width: 330px;
+	height: 55px;
+	color: #fff;
+	font-size: 35px;
+	margin-top: 30px;
+}
+.mid {
+	width: 100%;
+	height: 250px;
+}
+.mid div {
+	width: 320px;
+	height: 250px;
+	float: left;
+}
+.mid div:nth-of-type(1) {
+	background: url(img/circle.png) no-repeat 139px 50px;
+}
+.mid div:nth-of-type(2) {
+	background: url(img/flag.png) no-repeat 148px 50px;
+}
+.mid div:nth-of-type(3) {
+	background: url(img/flower.png) no-repeat 143px 50px;
+}
+.mid div:nth-of-type(4) {
+	background: url(img/square.png) no-repeat 135px 50px;
+}
+.mid p {
+	margin: 0;
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+	font-family: simhei;
+	border-right: 2px solid #eee;
+	position: relative;
+	top: 110px;
+	color: rgb(118, 119, 119);
+}
+.mid div:nth-of-type(4) p {
+	border: none;
+}
+.non {
+	width: 100%;
+	height: 360px;
+	box-sizing: border-box;
+	padding-top: 220px;
+	font-size: 53px;
+	font-family: simhei;
+	text-align: center;
+	color: rgba(50, 51, 51, 0.502);
+	background: #ededed url(img/logo1.png) center 90px no-repeat;
+}
+.seep {
+	position: relative;
+	width: 100%;
+	height: 341px;
+	background: url(img/seepic.jpg) 0 -610px no-repeat;
+	display: inline-block;
+}
+.zz1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #E74F4D;
+	opacity: .2;
+}
+.seep h3 {
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 50px;
+}
+.seep h3 span {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #fff;
+}
+.seep p {
+	text-align: center;
+	color: #fff;
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.input {
+	width: 220px;
+	height: 35px;
+	background: #fff;
+	position: absolute;
+	z-index: 11;
+	top: 165px;
+	line-height: 35px;
+	color: #333;
+	text-indent: 10px;
+	font-size: 12px;
+}
+.input:nth-child(4) {
+	left: 125px;
+}
+.input:nth-child(5) {
+	left: 395px;
+	box-sizing: border-box;
+	border: 1px solid #BE4E48;
+	border-bottom: none;
+}
+.input:nth-child(6) {
+	left: 665px;
+}
+.input:nth-child(7) {
+	right: 125px;
+	background: #be4e48;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 20px;
+	font-weight: 700;
+}
+.input img {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+.input ul {
+	width: 220px;
+	background: #e3e3e3;
+	list-style: none;
+	font-size: 13px;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid #BE4E48;
+	position: relative;
+	top: -1px;
+	left: -1px;
+}
+.input li:nth-child(1) {
+	color: #fff;
+	background: #BE4E48;
+}
+.zs {
+	position: relative;
+	width: 100%;
+	padding-top: 100px;
+	font-size: 0;
+}
+.zs img {
+	margin-left: 145px;
+	;
+}
+.zs div {
+	position: absolute;
+	text-align: center;
+}
+.zs div h4, .zs p {
+	margin: 0;
+}
+.zs div h4 {
+	font-family: simhei;
+	font-weight: 600;
+	opacity: .8;
+}
+.zs p {
+	font-size: 12px;
+	color: #999;
+}
+.bj {
+	top: 420px;
+	left: 200px
+}
+.sz {
+	top: 420px;
+	left: 720px
+}
+.xg {
+	top: 420px;
+	left: 970px;
+}
+.sh {
+	left: 380px;
+	top: 104px
+}
+.sh h4 {
+	letter-spacing: 30px;
+	font-size: 24px;
+	text-indent: 35px;
+}
+.xsj {
+	position: relative;
+	display: inline-block;
+	height: 567px;
+	width: 100%;
+	background: #00f url(img/tq.jpg) 0 -1305px no-repeat;
+}
+.xsj p {
+	margin: 0;
+}
+#p1 {
+	font-size: 50px;
+	color: #fff;
+	padding-top: 100px;
+	text-indent: 350px;
+}
+#p2 {
+	font-size: 158px;
+	color: #fff;
+	text-indent: 225px;
+}
+#p3 {
+	font-size: 22px;
+	color: #fff;
+	padding-left: 300px;
+}
+#d4 {
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid #fff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	position: relative;
+	left: 816px;
+}
+#p5 {
+	position: absolute;
+	right: 0;
+	top: 100px;
+	text-align: center;
+	width: 400px;
+	color: #666;
+	font-size: 16px;
+	font-weight: 700;
+}
+#p5 span {
+	color: #E74F4D
+}
+#p6 {
+	position: absolute;
+	right: 0;
+	top: 130px;
+	width: 400px;
+	color: #999;
+	font-size: 12px;
+}
+.xsj button {
+	position: absolute;
+	top: 300px;
+	right: 130px;
+	width: 100px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid rgb(226, 92, 96);
+	color: rgb(226, 92, 96);
+}
+.md {
+	width: 100%;
+	height: 521px;
+}
+.md img {
+	float: right;
+	;
+}
+#left {
+	width: 425px;
+	height: 100%;
+	background: #e74f4d;
+	float: left;
+}
+#right {
+	width: 425px;
+	height: 100%;
+	float: left;
+}
+.md p {
+	margin: 0;
+	font-size: 21px;
+	font-family: simsun;
+	text-align: center;
+	padding-top: 150px;
+	color: #fff;
+	line-height: 30px;
+	font-weight: 700;
+}
+.md hr {
+	width: 30px;
+	height: 1px;
+	background: #fff;
+}
+#right p {
+	color: #000;
+	opacity: .5;
+}
+#right hr {
+	background: #e74f4d
+}
+#right div, #left div {
+	width: 120px;
+	height: 30px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+	margin-left: 150px;
+	margin-top: 40px;
+}
+#right div {
+	color: #E74F4D;
+	border: 1px solid #E74F4D;
+}
+#right span {
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 28px solid #fff;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	position: relative;
+	left: 425px;
+	top: 90px;
+}
+.foot {
+	width: 100%;
+	display: inline-block;
+	height: 750px;
+	box-sizing: border-box;
+	padding-left: 125px;
+	padding-right: 125px;
+}
+#sm, #gs {
+	margin: 0 auto;
+	text-align: center;
+	width: 400px
+}
+#sm {
+	margin-top: 100px;
+	font-size: 21px;
+	font-family: simhei;
+	color: rgb(50, 51, 51);
+}
+#gs {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: rgb(170, 170, 170);
+	margin-bottom: 80px;
+}
+.foot span {
+	margin: 5px auto 10px;
+	display: block;
+	height: 2px;
+	width: 35px;
+	background: #E74F4D;
+}
+#declare {
+	width: 350px;
+	height: 400px;
+	position: absolute;
+}
+#sign {
+	width: 680px;
+	height: 400px;
+	margin-left: 350px;
+	text-align: center;
+}
+#declare h5 {
+	font-size: 14px;
+	font-family: simhei;
+	color: rgba(35, 24, 21, 0.8);
+}
+#declare p {
+	font-size: 12px;
+	font-family: simhei;
+	color: rgba(35, 24, 21, 0.6);
+	margin-bottom: 5px;
+}
+#declare i {
+	font-size: 12px;
+	font-family: simhei;
+	color: rgba(35, 24, 21, 0.6);
+	font-style: normal;
+	text-align: right;
+	display: inline-block;
+	width: 95%;
+}
+#declare i s {
+	width: 4px;
+	height: 4px;
+	display: inline-block;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	margin-bottom: 1px;
+	margin-right: 5px;
+}
+#sign input[type*='te'] {
+	width: 260px;
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	background: #EDEDED;
+	border: none;
+}
+#sign textarea {
+	width: 538px;
+	resize: none;
+	margin-left: 11px;
+	height: 100px;
+	background: #EDEDED;
+	border: none;
+}
+#sign input[type='submit'] {
+	width: 540px;
+	height: 40px;
+	background: #EDEDED;
+	border: none;
+	margin-left: 11px;
+	margin-top: 15px;
+	;
+}
+footer {
+	width: 100%;
+	height: 400px;
+}
+#footer {
+	width: 100%;
+	height: 350px;
+	background: #32353e;
+	box-sizing: border-box;
+	padding-left: 380px;
+	padding-right: 380px;
+}
+#ls {
+	width: 100%;
+	height: 50px;
+	background: #303039;
+}
+footer p {
+	margin: 0;
+	text-align: center;
+}
+footer p:nth-child(1) {
+	font-size: 21px;
+	font-family: simhei;
+	color: #fff;
+	height: 100px;
+	line-height: 130px;
+}
+footer p:nth-child(2) {
+	font-size: 12px;
+	font-family: simhei;
+	color: #fff;
+	line-height: 20px;
+}
+footer input[type='email'] {
+	width: 420px;
+	border: none;
+	height: 32px;
+	padding: 5px;
+	margin-top: 20px;
+}
+footer button {
+	width: 90px;
+	height: 42px;
+	border: none;
+	background: #6f7178;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	color: #fff;
+	letter-spacing: 13px;
+	text-indent: 11px;
+}
+footer img {
+	margin-top: 30px;
+	margin-right: 30px;
+}
+footer .img {
+	margin-left: 155px;
+}
+#ls {
+	padding-left: 133px;
+	box-sizing: border-box;
+	font-size: 12px;
+	font-family: simhei;
+	color: #fff;
+	line-height: 60px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+	<h1><i><img src="img/logo-header.png"/></i>新世界</h1>
+	<ul>
+		<li>首页</li>
+		<li>最新活动</li>
+		<li>项目介绍</li>
+		<li>爱心社区</li>
+		<li>关于我们</li>
+	</ul>
+	<div><i><img src="img/login.png"/></i>登录</div>
+	</header>
+	<div class="top">
+		<div id="zz"></div>
+		<h2>Time of new life</h2>
+		<p>新时代,年轻的人们让我们一起体验新生活,享受新生活</p>
+		<button id="btn">开始体验</button>
+	</div>
+	<div class="mid">
+		<div>
+			<p>打造全新世界观,让你更<br />爱你的生活</p>
+		</div>
+		<div>
+			<p>丰富多彩的公益活动,发<br />挥新世界的主人公意识</p>
+		</div>
+		<div>
+			<p>时尚的新理念,超前体验<br />未知的生活</p>
+		</div>
+		<div>
+			<p>完善的培养机制,培养你<br />全新的世界观</p>
+		</div>
+	</div>
+	<div class="non">关于新世界,你不知道的还有什么?</div>
+	<div class="seep">
+		<div class="zz1"></div>
+		<h3>查找新世界<span>城</span>市活动信息</h3>
+		<p>每个城市有不同的活动信息,请自主查询您所需要了解的城市</p>
+		<div class="input">中国<img src="img/ip.png"></div>
+		<div class="input">省份<img src="img/ip.png">
+			<ul>
+				<li>北京</li>
+				<li>上海</li>
+				<li>沈阳</li>
+				<li>杭州</li>
+				<li>大连</li>
+			</ul>
+		</div>
+		<div class="input">城市<img src="img/ip.png"></div>
+		<div class="input">搜索</div>
+	</div>
+	<div class="zs">
+		<img src="img/gr.jpg" />
+		<div class="bj">
+			<h4>北京活动</h4>
+			<p>新社区大联盟</p>
+		</div>
+		<div class="sh">
+			<h4>上海活动</h4>
+			<p>夜上海新景观探索</p>
+		</div>
+		<div class="sz">
+			<h4>深圳活动</h4>
+			<p>全新海岸线观点站</p>
+		</div>
+		<div class="xg">
+			<h4>香港活动</h4>
+			<p>奢侈消费大派送</p>
+		</div>
+	</div>
+	<div class="xsj">
+		<p id="p1">新世界</p>
+		<p id="p2">TIME</p>
+		<p id="p3">@新世界-北京<br>2016.04.01</p>
+		<div id="d4"></div>
+		<p id="p5">新世界/<span>01</span></p>
+		<p id="p6">新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界</p>
+		<button>更多详情</button>
+	</div>
+	<div class="md">
+		<div id="left">
+			<p>新时代<br>关于爱生活的我们</p>
+			<hr>
+			<div>查看更多</div>
+		</div>
+		<div id="right">
+			<p>新时代<br>关于爱生活的我们</p>
+			<hr />
+			<div>查看更多</div>
+			<span></span>
+		</div>
+		<img src="img/pic8.jpg" />
+	</div>
+	<div class="foot">
+		<p id="sm">成为我们的志愿者</p>
+		<span></span>
+		<p id="gs">新世界的大家庭需要每一个爱生活的人的加入,如果你够年轻,有梦想,有激情,那就不要犹豫,快加入我们,成为改变所有人生活的人
+		</p>
+		<div id="declare">
+			<h5>新世界志愿者协议</h5>
+			<p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规,并且本着平等自愿的原则......</p>
+			<i><s></s>more</i>
+			<h5>新世界志愿者权利</h5>
+			<p>新世界志愿者享受新世界内部所有资源共享的权利,并且享受所在新世界活动的优先参与资格</p><i><s></s>more</i>
+			<h5>更多条款</h5><i><s></s>more</i>
+		</div>
+		<div id="sign">
+			<input type="text" placeholder="姓名:" />
+			<input type="text" placeholder="年龄" />
+			<input type="tel" placeholder="联系方式:" />
+			<input type="text" placeholder="联系地址:" />
+			<textarea placeholder="请简单描述您梦想的生活"></textarea>
+			<input type="submit" value="提交申请">
+		</div>
+	</div>
+	<footer>
+		<div id="footer">
+			<p>联系我们</p>
+			<p>为了更好的活的我们最新的产品资讯,您可以留下您的电子邮箱快速订阅我们的产品咨询<br>也可以通过以下任何方式关注我们动态</p>
+			<input type="email" placeholder="someone@email.com" /><button>提交</button>
+			<img src="img/qq.png" class="img" />
+			<img src="img/sina.png" />
+			<img src="img/bird.png" />
+			<img src="img/earth.png" />
+		</div>
+		<div id="ls">@2016新世界</div>
+	</footer>
+</div>
+</body>
+</html>
