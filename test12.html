@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>test12</title>
+<style type="text/css">
+th {
+	font-size: 14px;
+	color: #fff;
+	background: #000;
+	text-align: left;
+}
+tr {
+	color: red;
+}
+tr:nth-child(n+5) {
+	color: #000;
+}
+tr:nth-child(odd) {
+	background: #ccc;
+}
+.dec {
+	line-height: 50px;
+	font-size: 20px;
+	color: #f0f;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 5px 5px 5px #FF0000;
+	width: 300px;
+	height: 50px;
+	border: 1px solid #0f0;
+	box-shadow: 10px 10px 5px #888;
+}
+.box {
+	width: 300px;
+	height: 100px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	position: relative;
+}
+.wrapper {
+	width: 600px;
+	height: 100px;
+	position: absolute;
+}
+#left {
+	width: 300px;
+	height: 100px;
+	background: #0f0;
+	float: left;
+}
+#right {
+	width: 300px;
+	height: 100px;
+	background: #00f;
+	float: left;
+}
+span {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 25px;
+	height: 25px;
+	background: #7EBF7F;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	cursor:pointer;
+}
+span:last-child {
+	right: 0;
+}
+span:nth-last-child(2) {
+	right: 30px;
+}
+span:nth-of-type(1) {
+	right: 60px;
+}
+span:last-child:hover{
+	
+}
+span:nth-last-child(2):hover{
+	
+}
+span:nth-of-type(1):hover{
+	
+}
+.wrapper:hover{
+	animation: ltr 5s;
+}
+@-webkit-keyframes ltr{
+	from{left:0}
+	to{left:-300px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<table>
+	<tr>
+		<th>排名</th>
+		<th>网站</th>
+		<th>热度</th>
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td>百度前端技术学院</td>
+		<td>13000</td>
+	</tr>
+	<tr>
+		<td>2.</td>
+		<td>百度前端技术学院</td>
+		<td>12000</td>
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td>百度前端技术学院</td>
+		<td>11000</td>
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td>百度前端技术学院</td>
+		<td>10000</td>
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td>百度前端技术学院</td>
+		<td>9000</td>
+	</tr>
+	<tr>
+		<td>6.</td>
+		<td>百度前端技术学院</td>
+		<td>8000</td>
+	</tr>
+	<tr>
+		<td>7.</td>
+		<td>百度前端技术学院</td>
+		<td>7000</td>
+	</tr>
+	<tr>
+		<td>8.</td>
+		<td>百度前端技术学院</td>
+		<td>6000</td>
+	</tr>
+	<tr>
+		<td>9.</td>
+		<td>百度前端技术学院</td>
+		<td>5000</td>
+	</tr>
+	<tr>
+		<td>10.</td>
+		<td>百度前端技术学院</td>
+		<td>4000</td>
+	</tr>
+</table>
+<div class="dec">CSS3动画</div>
+<div class="box">
+	<div class="wrapper">
+		<div id="left"></div>
+		<div id='right'></div>
+
+	</div>
+	<span>1</span>
+<span>2</span>
+<span>3</span>
+</div>
+</body>
+</html>
