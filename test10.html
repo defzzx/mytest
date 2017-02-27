@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>test10</title>
+<style type="text/css">
+body {
+	margin: 0;
+}
+.wrapper div {
+	width: 150px;
+	border: 1px solid #f00;
+}
+@media screen and (min-width: 641px) {
+	.wrapper {
+		width: 100%;
+		height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.wrapper div:nth-child(1) {
+		height: 120px;
+	}
+	.wrapper div:nth-child(2) {
+		height: 100px;
+	}
+	.wrapper div:nth-child(3) {
+		height: 40px;
+	}
+	.wrapper div:nth-child(4) {
+		height: 200px;
+		border: 1px solid #00f
+	}
+}
+@media screen and (max-width: 640px) {
+	.wrapper {
+		width: 100%;
+		height: 350px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.wrapper div:nth-child(1) {
+		height: 120px;
+		order: 2
+	}
+	.wrapper div:nth-child(2) {
+		height: 100px;
+		order: 3
+	}
+	.wrapper div:nth-child(3) {
+		height: 40px;
+		order: 4
+	}
+	.wrapper div:nth-child(4) {
+		height: 200px;
+		order: 1;
+		border: 1px solid #00f
+	}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+</div>
+</body>
+</html>
